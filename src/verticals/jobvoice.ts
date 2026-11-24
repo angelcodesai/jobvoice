@@ -21,8 +21,8 @@ export const jobvoice: VerticalConfig = {
     defaultTerms: 'Quote valid for 30 days.',
   },
   legal: {
-    privacyUrl: 'https://riseupkings.com/jobvoice/privacy',
-    termsUrl: 'https://riseupkings.com/jobvoice/terms',
+    privacyUrl: 'https://example.com/jobvoice/privacy',
+    termsUrl: 'https://example.com/jobvoice/terms',
   },
   revenuecat: {
     apiKey: process.env.EXPO_PUBLIC_RC_API_KEY ?? '', // set in .env; empty disables billing (dev)
@@ -31,6 +31,6 @@ export const jobvoice: VerticalConfig = {
     annualId: 'jobvoice_pro_annual',
   },
   android: {
-    package: 'com.riseupkings.jobvoice',
+    package: 'com.example.jobvoice',
   },
 };

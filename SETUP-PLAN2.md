@@ -12,7 +12,7 @@ the database migration, and the QA flow needs everything above it.
 1. No developer account yet? https://play.google.com/console → register (**$25 one-time fee**;
    identity verification can take a day or two — start this first).
 2. **Create app** → name `JobVoice`, app type App, free. Package name is fixed by the code:
-   **`com.riseupkings.jobvoice`** (set in `src/verticals/jobvoice.ts` via `app.config.ts`).
+   **`com.example.jobvoice`** (set in `src/verticals/jobvoice.ts` via `app.config.ts`).
 3. **Set up a CLOSED TESTING track** (Testing → Closed testing → create track). This is
    required twice over: Google's new-personal-account rule (**12 testers for 14 days**
    before production access) AND subscription products are **only purchasable from a
@@ -187,15 +187,15 @@ Use the license-tester Google account from section 1.5 on the device.
 The paywall links to hardcoded legal URLs — these pages **must be live** before
 submitting for Play review (and be listed in the Play Console store listing):
 
-- https://riseupkings.com/jobvoice/privacy
-- https://riseupkings.com/jobvoice/terms
+- https://example.com/jobvoice/privacy
+- https://example.com/jobvoice/terms
 
 ### Before production
 
 Two pages **must be live** before a production release (not just closed testing):
 
 - The **privacy policy** above (also linked from the Play store listing).
-- The **delete-account page** at `https://riseupkings.com/jobvoice/delete-account` —
+- The **delete-account page** at `https://example.com/jobvoice/delete-account` —
   Play's account-deletion policy requires a web link to request deletion for any app
   that enables account creation, entered in the Data safety form. The complete page
   content is ready to host in
